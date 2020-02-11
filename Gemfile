@@ -29,7 +29,6 @@ gem 'jbuilder', '~> 2.7'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
-
 # Alphabetized thought out additions
 gem 'http'
 gem 'slim-rails'
@@ -53,7 +52,8 @@ group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 2.15'
   gem 'rails-controller-testing'
-  # Ideally we would be on rails 5 and not on beta but I'd rather do this than downgrade
+  # Ideally we would be on rails 5 and not on rspec beta but I'd rather do this than downgrade
+  #   especially since rspec itself isn't going to run on production
   gem 'rspec-rails', '4.0.0.beta3'
   gem 'selenium-webdriver'
   # Easy installation and use of web drivers to run system tests with browsers

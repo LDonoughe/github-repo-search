@@ -1,1 +1,10 @@
-input type="text" placeholder="Repository Name"
+form action="/" method="GET"
+  input type="text" name="query" placeholder="Repository Name"
+  input type="submit"
+
+- if @results
+  - @results.each do |result|
+    -# Could be expanded to display better
+    = link_to result['html_url'], result['html_url']
+    br
+    
