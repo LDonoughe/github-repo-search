@@ -1,5 +1,7 @@
 # Github Repo Search
 
+Searches github repos. Filters and displays results
+
 ## Setup
 install asdf plugins for postgres, nodejs, ruby
 
